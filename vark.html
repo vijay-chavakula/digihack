@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="./css/lib/angular-material.min.css"></link>
+<link href="./css/app.css" rel="stylesheet"></link>
+<!--<link rel="stylesheet" href="./css/lib/ui-grid.min.css" type="text/css">-->
+<link rel="stylesheet" href="https://cdn.rawgit.com/angular-ui/bower-ui-grid/master/ui-grid.min.css" type="text/css">
+<base href="./"></base>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimal-ui" />
+
+</head>
+<body class="" ng-app="VARK">
+
+<script src="./js/lib/angular.min.js"></script>
+<script src="./js/lib/angular-animate.min.js"></script>
+<script src="./js/lib/angular-aria.min.js"></script>
+<script src="./js/lib/angular-material.min.js"></script>
+<!--<script src="./js/lib/ui-grid.min.js"></script>
+<script src="https://cdn.rawgit.com/angular-ui/bower-ui-grid/master/ui-grid.min.js"></script>
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.41.0.min.js"></script>-->
+<script type="text/javascript" src="./js/shopapp.js"></script>
+
+
+	<div ng-controller="AppCtrl" class="carddemoInCardActions" layout="column">
+
+		<md-toolbar class="md-hue-2">
+      		<div class="md-toolbar-tools" >
+      		<div layout="row" ng-click="showHome()"
+			hide-xs hide-gt-xs hide-sm hide-gt-sm show-md show-gt-md show-lg show-gt-lg show-xl>
+          	<img src="./images/Etap_logo.jpg" width=120 height=40></img>
+          	</div>
+          	<div layout="row" ng-click="showHome()"
+			hide-md hide-gt-md hide-lg hide-gt-lg hide-xl>
+          	<img src="./images/Etap_logo.jpg" width=60 height=30></img>
+          	</div>
+
+          	<md-button class="md-icon-button" aria-label="Avatar" hide-xs hide-gt-xs show-sm show-gt-sm
+        	show-md show-gt-md show-lg show-gt-lg show-xl>
+	          <md-icon md-svg-icon="./images/account_box.svg" class="fav-ico-black" ng-click="showHome()">
+	          </md-icon>
+	        </md-button>
+
+        	<h2 flex md-truncate class="md-display-1" style="position:relative;left:20px;">
+        	 Kindle hearts.. Igniting minds.,
+        	</h2>
+
+	        <md-button class="md-icon-button" aria-label="Alert">
+	          <md-icon md-svg-icon="./images/bell.svg" style="color: greenyellow;"></md-icon>
+	        </md-button>
+			 <md-button class="md-icon-button" aria-label="Menu">
+	          <md-icon md-svg-icon="./images/menu.svg" style="color: greenyellow;"></md-icon>
+	        </md-button>
+            </div>
+    	</md-toolbar>
+
+	   	<div layout="column" flex>
+	   		<md-card  >
+					<div class="left-5">
+                <ng-include src=" 'questions.html' " ></ng-include>
+					</div>
+				<!--<ng-include src=" 'lex1.html' "  ng-if="tabVal=='bot'"></ng-include>-->
+	   		</md-card>
+	   	</div>
+
+	</div>
+</body>
+</html>
