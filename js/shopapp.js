@@ -37,7 +37,7 @@ app.controller('AppCtrl', ['$scope','$http','$mdMedia',
 		$http.get('https://a29f8r5cp1.execute-api.us-east-1.amazonaws.com/dev/cards')
 		.then(function(response) {
 			console.log(response);
-			console.log("data::" + response.data[0].name);
+			//console.log("data::" + response.data[0].name);
       const length = response.data.length;
       var i=0;
       for(i=0; i < length; i++){
