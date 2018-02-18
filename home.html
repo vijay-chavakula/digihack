@@ -1,0 +1,41 @@
+
+<b style="position:relative;left:15%">Good Evening Singh</b>
+<i style="position:relative;left:30%;"><img src="images/currency.png" style="height:30px;width:30px;"></img>&#8377; 6300</i>
+<div layout="column" flex=100 >
+<md-card style="background-color:#ebdb4d;height:150px;" flex=100>
+ <img src="./images/DBS_logo3.png" style="position:fixed;right:30px;width:120px;height:120px;" alt="Digi XSpends">
+ <md-card-content>
+   <p>Amarendra Bahubali</p>
+   <b><p>1234 5678 9000</p></b>
+   <table cellpadding=5px; cellspacing=5px;>
+     <tr><td>Expires By</td><td>CVV</td></tr>
+     <tr><td>10/03/2018</td><td>438</td></tr>
+   </table>
+ </md-card-content>
+ <md-card-footer>
+ </md-card-footer>
+</md-card>
+
+<md-card ng-repeat="item in items">
+  <md-card-content>
+      <table>
+           <tr>
+               <td colspan="2" rowspan="2">
+                <md-icon md-svg-icon="./images/favourite.svg"></md-icon>
+                </td>
+                <td>&#8377;{{item.amount}}</td>
+                <td colspan="2" rowspan="2">
+                   {{item.expirydate}}
+                </td>
+           </tr>
+           <tr>
+             <td>{{item.purpose}}</td>
+           </tr>
+     </table>
+  </md-card-content>
+</md-card>
+<div ng-if="isChatbotActive">
+  <ng-include src=" 'lex.html' "></ng-include>
+</div>
+<img src="images/chatbot.png" style="position:fixed;bottom:10px;right:10px;height:50px;width:50px;" ng-click="setChatBot()"></img>
+</div>

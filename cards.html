@@ -1,0 +1,22 @@
+<div>
+	<md-card ng-repeat="item in items">
+    <md-card-content>
+      <div layout="row">
+        <table flex>
+			       <tr>
+				         <td colspan="2" rowspan="2">
+                  <md-icon md-svg-icon="./images/favourite.svg"></md-icon>
+                  </td>
+                  <td>&#8377;{{item.amount}}</td>
+                  <td colspan="2" rowspan="2">
+                     {{item.expirydate}}
+                  </td>
+			       </tr>
+			       <tr>
+               <td>{{item.purpose}}</td>
+			       </tr>
+		   </table>
+		  </div>
+    </md-card-content>
+	</md-card>
+</div>

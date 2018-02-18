@@ -3,7 +3,6 @@
 }
 .md-card-image1{
   height:200px;
-  width: 100px;
 }
 .carddemoInCardActions{
 
@@ -26,9 +25,11 @@ margin: 0 auto;
 	position: relative;
 	width:70%;
 }
-.myCard1{
-    position: relative;
-    width:70%;
+.myCard-50{
+	position: relative;
+  left: 15%;
+	width:250px;
+  height: 150px;
 }
 .cardHeight{
     height:150px;
@@ -108,13 +109,18 @@ button.md-button.md-icon2.md-icon-button{
 	padding-top: 0px !important;
 }
 .md-toolbar-tools{
-    background-color:#519CFF
+  background-color:#FFFFFF !important;
+}
+.roboto{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 .md-list{
 
 }
 .img-circle {
-    border-radius: 50%;
+  border-radius: 50%;
 	width: 80px;
 	height:80px;
 	box-sizing: border-box;
@@ -127,21 +133,21 @@ button.md-button.md-icon2.md-icon-button{
 .md-errors-spacer { display:none; }
 .md-block{
 	border-bottom-color: #b3b3b3;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-left-color: #b3b3b3;
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-right-color: #b3b3b3;
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-top-color: #b3b3b3;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-top-style: solid;
-    border-top-width: 1px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: #b3b3b3;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: #b3b3b3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: #b3b3b3;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top-style: solid;
+  border-top-width: 1px;
 }
 .p20{
 	margin-left: 20%;
@@ -177,7 +183,7 @@ a.active.page-filter {
 	font-size : 200%;
 	left: -120px;
 	text-decoration: none;
-    display: inline-block;
+  display: inline-block;
 }
 .chatTogglerDiv {
     width: 50px;
@@ -205,7 +211,7 @@ p.userRequest {
 	margin: 4px;
 	padding: 4px 10px 4px 10px;
 	border-radius: 4px;
-    min-width: 50%;
+  min-width: 50%;
 	max-width: 85%;
 	float: left;
 	background-color: #7d7;
